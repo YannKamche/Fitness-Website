@@ -41,4 +41,68 @@ body {
   justify-content: space-between;
   padding: 0 9%;
   background: #000;
+}
+.header .logo {
+  font-weight: bold;
+  color: #f00;
+  font-size: 3rem;
+}
+.header .logo span {
+  color: #fff;
+}
+.header .navbar a {
+  display: inline-block;
+  padding: 1.5rem 2rem;
+  font-size: 1.7rem;
+  color: #fff;
+}
+.header .navbar a:hover {
+  background: #f00;
+}
+.header #menu-btn {
+  font-size: 3rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  .header {
+    padding: 0 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    padding: 2rem;
+  }
+  .header #menu-btn {
+    display: inline-block;
+  }
+  .header #menu-btn.fa-times {
+    transform: rotate(180deg);
+  }
+  .header .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background: #000;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  .header .navbar.active {
+    -webkit-clip-path: polygon(0 1%, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 1%, 100% 0, 100% 100%, 0% 100%);
+  }
+  .header .navbar a {
+    display: block;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
 }/*# sourceMappingURL=styles.css.map */
