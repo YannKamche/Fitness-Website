@@ -24,11 +24,30 @@ html::-webkit-scrollbar-track {
   background: #000;
 }
 html::-webkit-scrollbar-thumb {
-  background: #f00;
+  background: linear-gradient(#f00 50%, #fff 50%);
+  border-radius: 5rem;
 }
 
 body {
   background: #000;
+}
+
+section {
+  padding: 5rem 9%;
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  padding-right: 3rem;
+  color: #fff;
+  cursor: pointer;
+  background: linear-gradient(130deg, #f00 93%, transparent 90%);
+  font-size: 1.7rem;
+}
+.btn:hover {
+  transform: scale(1.1);
 }
 
 .header {
@@ -41,9 +60,10 @@ body {
   justify-content: space-between;
   padding: 0 9%;
   background: #000;
+  z-index: 10000;
 }
 .header .logo {
-  font-weight: bold;
+  font-weight: bolder;
   color: #f00;
   font-size: 3rem;
 }
@@ -59,30 +79,80 @@ body {
 .header .navbar a:hover {
   background: #f00;
 }
-.header #menu-btn {
+
+#menu-btn {
   font-size: 3rem;
   color: #fff;
   cursor: pointer;
   display: none;
 }
 
+.home {
+  padding: 0;
+  margin-top: 6.5rem;
+}
+.home .slide {
+  min-height: 70vh;
+  background-size: cover !important;
+  background-position: center !important;
+  padding: 2rem 9%;
+  display: flex;
+  align-items: center;
+}
+.home .slide .content {
+  width: 60rem;
+}
+.home .slide .content span {
+  font-size: 2rem;
+  color: #f00;
+  display: block;
+}
+.home .slide .content h3 {
+  font-size: 5rem;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.swiper-pagination-bullet {
+  height: 2rem;
+  width: 2rem;
+  background: #fff;
+  border-radius: 0;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #f00;
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
+    scroll-padding: 7rem;
   }
   .header {
     padding: 0 2rem;
   }
+  section {
+    padding: 3rem 2rem;
+  }
+  .home .slide {
+    padding: 2rem 5%;
+  }
+  .home .slide .content {
+    width: 50rem;
+  }
+  .home .slide .content h3 {
+    font-size: 4rem;
+  }
 }
 @media (max-width: 768px) {
-  .header {
-    padding: 2rem;
-  }
-  .header #menu-btn {
+  #menu-btn {
     display: inline-block;
   }
-  .header #menu-btn.fa-times {
+  #menu-btn.fa-times {
     transform: rotate(180deg);
+  }
+  .header {
+    padding: 2rem;
   }
   .header .navbar {
     position: absolute;
@@ -94,11 +164,12 @@ body {
             clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
   .header .navbar.active {
-    -webkit-clip-path: polygon(0 1%, 100% 0, 100% 100%, 0% 100%);
-            clip-path: polygon(0 1%, 100% 0, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
   .header .navbar a {
     display: block;
+    font-size: 2rem;
   }
 }
 @media (max-width: 450px) {
