@@ -150,6 +150,28 @@ section {
     }
 }
 
+.about {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8rem;
+    background-color: red;
+
+    .image {
+        flex: 1 1 42rem;
+        position: relative;
+
+        img {
+            width: 100%;
+            padding: 2rem;
+            background-color: blue;
+        }
+    }
+
+    .content {
+        flex: 1 1 42rem;
+    }
+}
 
 
 

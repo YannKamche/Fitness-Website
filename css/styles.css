@@ -123,6 +123,26 @@ section {
   background: #f00;
 }
 
+.about {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8rem;
+  background-color: red;
+}
+.about .image {
+  flex: 1 1 42rem;
+  position: relative;
+}
+.about .image img {
+  width: 100%;
+  padding: 2rem;
+  background-color: blue;
+}
+.about .content {
+  flex: 1 1 42rem;
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
