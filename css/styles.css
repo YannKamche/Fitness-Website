@@ -36,6 +36,29 @@ section {
   padding: 5rem 9%;
 }
 
+.heading {
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+.heading::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 0.1rem;
+  width: 100%;
+  background: #aaa;
+  z-index: -1;
+}
+.heading span {
+  font-size: 3rem;
+  color: #f00;
+  background-color: #000;
+  padding: 0.5rem 1.5rem;
+}
+
 .btn {
   margin-top: 1rem;
   display: inline-block;
@@ -128,19 +151,65 @@ section {
   align-items: center;
   flex-wrap: wrap;
   gap: 8rem;
-  background-color: red;
 }
 .about .image {
   flex: 1 1 42rem;
   position: relative;
 }
+.about .image::before, .about .image::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: #f00;
+  height: 15rem;
+  width: 15rem;
+}
+.about .image::before {
+  top: 0;
+  left: 0;
+}
+.about .image::after {
+  bottom: 0;
+  right: 0;
+}
 .about .image img {
   width: 100%;
   padding: 2rem;
-  background-color: blue;
 }
 .about .content {
   flex: 1 1 42rem;
+}
+.about .content span {
+  font-size: 2rem;
+  color: #f00;
+}
+.about .content .title {
+  font-size: 4rem;
+  color: #fff;
+  margin-top: 0.5rem;
+}
+.about .content p {
+  font-size: 1.5rem;
+  color: #aaa;
+  padding: 1rem 0;
+  line-height: 2;
+}
+.about .content .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+.about .content .box-container .box {
+  flex: 1 1 20rem;
+}
+.about .content .box-container .box h3 {
+  font-size: 2rem;
+  color: #fff;
+}
+.about .content .box-container .box h3 i {
+  padding-right: 1.5rem;
+  color: #f00;
 }
 
 @media (max-width: 991px) {
@@ -190,6 +259,15 @@ section {
   .header .navbar a {
     display: block;
     font-size: 2rem;
+  }
+  .about {
+    gap: 3rem;
+  }
+  .about .image {
+    margin-top: 5rem;
+  }
+  .about .content .title {
+    font-size: 3rem;
   }
 }
 @media (max-width: 450px) {
