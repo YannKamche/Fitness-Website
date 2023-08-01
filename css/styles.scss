@@ -18,6 +18,12 @@ $white: #fff;
 $light-white: #aaa;
 $light-bg: #111;
 
+@mixin grid($val) { //A reusable block of CSS code that can be included in other CSS rules
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+    gap: 1.5rem;
+}
+
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
@@ -49,9 +55,10 @@ section {
     padding: 5rem 9%;
 }
 
+/** feature title style **/
 .heading {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     position: relative;
 
     &::before {
@@ -71,6 +78,8 @@ section {
         color: $red;
         background-color: $black;
         padding:.5rem 1.5rem;
+        border: .1rem solid $light-white;
+        border-radius: .5rem;
     }
 }
 
@@ -175,7 +184,7 @@ section {
         background: $red;
     }
 }
-
+/***About section****/
 .about {
     display: flex;
     align-items: center;
@@ -250,6 +259,136 @@ section {
                         color: $red;
                     }
                 }
+            }
+        }
+    }
+}
+
+/** Feature section style***/
+.features .box-container {
+    @include grid(32rem);
+    gap: 0;
+
+    .box {
+        background: $light-bg;
+
+        &.second {
+            display: flex;
+            flex-flow: column-reverse;
+        }
+
+        &:hover .image img {
+            transform: scale(1.1);
+        }
+
+        .image {
+            height: 30rem;
+            width: 100%;
+            overflow: hidden;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }       
+        }
+
+        .content {
+            padding: 2rem;
+            text-align: center;
+
+            img{
+                height: 9rem;
+                margin-bottom: 1rem;
+                filter: invert(1);
+            }
+
+            h3 {
+                font-size: 2rem;
+                color: $red;
+            }
+
+            p {
+                line-height: 2;
+                font-size: 1.5rem;
+                color: $light-white;
+                padding: 1rem 0;
+            }
+        }
+    }
+
+}
+
+.pricing {
+    @include grid(32rem);
+
+    .information {
+        
+        span {
+            font-size: 2rem;
+            color: $red;
+        }
+
+        h3 {
+            font-size: 4rem;
+            color: $white;
+            padding-top: .5rem;
+        }
+
+        p {
+            line-height: 2;
+            padding: 1rem 0;
+            color: $light-white;
+            font-size: 1.4rem;
+        }
+
+        i {
+            padding-right: 1rem;
+            color: $red;
+        }
+    }
+
+    .plan {
+        text-align: center;
+        padding: 2rem;
+
+        &.basic {
+            background: linear-gradient(
+                130deg,
+                $light-bg 93%,
+                transparent 90%
+            );
+        }
+
+        h3 {
+            font-size: 2.5rem;
+            margin: 1rem 0;
+            color: $white;
+            
+        }
+        .price {
+            font-size: 5rem;
+            font-weight: bolder;
+            color: $red;
+
+            span {
+                color: $white;
+                font-size: 2rem;
+            }
+        }
+
+        .list {
+            padding: 1rem 0;
+            p {
+                line-height: 2;
+                padding: 1rem 0;
+                color: $light-white;
+                font-size: 1.4rem;
+            }
+    
+            i {
+                padding-right: 1rem;
+                color: $red;
             }
         }
     }
@@ -336,6 +475,10 @@ section {
         .content .title {
             font-size: 3rem;
         }
+      }
+
+      .features .box-container .box.second {
+        flex-flow: column;
       }
 }
 @media (max-width: 450px) {
