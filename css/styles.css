@@ -230,6 +230,7 @@ section {
 }
 .features .box-container .box:hover .image img {
   transform: scale(1.1);
+  filter: blur(1.5px);
 }
 .features .box-container .box .image {
   height: 30rem;

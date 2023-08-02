@@ -280,6 +280,7 @@ section {
 
         &:hover .image img {
             transform: scale(1.1);
+            filter: blur(1.5px);
         }
 
         .image {
