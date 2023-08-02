@@ -36,7 +36,7 @@ section {
   padding: 5rem 9%;
 }
 
-/** feature title style **/
+/** All sections title style **/
 .heading {
   text-align: center;
   margin-bottom: 3rem;
@@ -149,7 +149,6 @@ section {
   background: #f00;
 }
 
-/***About section****/
 .about {
   display: flex;
   align-items: center;
@@ -216,7 +215,6 @@ section {
   color: #f00;
 }
 
-/** Feature section style***/
 .features .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
@@ -321,6 +319,82 @@ section {
 .pricing .plan .list i {
   padding-right: 1rem;
   color: #f00;
+}
+
+.trainers .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+  gap: 1.5rem;
+}
+.trainers .box-container .box {
+  height: 40rem;
+  background-color: red;
+  overflow: hidden;
+  position: relative;
+}
+.trainers .box-container .box:hover .content {
+  transform: translateY(0);
+}
+.trainers .box-container .box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.trainers .box-container .box .content {
+  background: #111;
+  padding: 2rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateY(6.5rem);
+}
+.trainers .box-container .box .content span {
+  font-size: 1.5rem;
+  color: #f00;
+}
+.trainers .box-container .box .content h3 {
+  font-size: 2rem;
+  color: #fff;
+  padding-top: 0.5rem;
+}
+.trainers .box-container .box .content .share {
+  padding-top: 2rem;
+  margin-top: 1.5rem;
+  border-top: 0.1rem solid #aaa;
+}
+.trainers .box-container .box .content .share a {
+  font-size: 2rem;
+  color: #fff;
+  margin-right: 1.5rem;
+}
+.trainers .box-container .box .content .share a:hover {
+  color: #f00;
+}
+
+.banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/banner-bg.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+}
+.banner span {
+  font-size: 2rem;
+  color: #f00;
+}
+.banner h3 {
+  color: #fff;
+  padding-top: 1rem;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+}
+.banner p {
+  font-size: 1.5rem;
+  color: #aaa;
+  max-width: 60rem;
+  margin: 1rem auto;
+  line-height: 2;
 }
 
 @media (max-width: 991px) {
