@@ -398,6 +398,88 @@ section {
   line-height: 2;
 }
 
+.review {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.review .information {
+  flex: 1 1 35rem;
+}
+.review .information span {
+  font-size: 2rem;
+  color: #f00;
+}
+.review .information h3 {
+  font-size: 3rem;
+  color: #fff;
+  padding-top: 1rem;
+}
+.review .information p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #aaa;
+  padding: 1rem 0;
+}
+.review .review-slider {
+  flex: 1 1 60rem;
+}
+.review .review-slider .slide {
+  background: linear-gradient(130deg, #111 93%, transparent 90%);
+  padding: 2rem 3rem;
+}
+.review .review-slider .slide p {
+  font-size: 1.5rem;
+  color: #aaa;
+  line-height: 2;
+}
+.review .review-slider .slide .user {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+.review .review-slider .slide .user img {
+  width: 5rem;
+  height: 5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+.review .review-slider .slide .user h3 {
+  font-size: 2rem;
+  color: #fff;
+}
+.review .review-slider .slide .user span {
+  color: #f00;
+  font-size: 1.5rem;
+}
+.review .review-slider .slide .user i {
+  font-size: 5rem;
+  margin-left: auto;
+  margin-right: 2rem;
+  color: #f00;
+}
+
+.blogs .slide {
+  background: #111;
+}
+.blogs .slide:hover .image img {
+  transform: scale(1.1);
+}
+.blogs .slide .image {
+  height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+.blogs .slide .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
