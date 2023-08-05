@@ -230,7 +230,6 @@ section {
 }
 .features .box-container .box:hover .image img {
   transform: scale(1.1);
-  filter: blur(1.5px);
 }
 .features .box-container .box .image {
   height: 30rem;
@@ -464,6 +463,7 @@ section {
 
 .blogs .slide {
   background: #111;
+  margin-bottom: 7rem;
 }
 .blogs .slide:hover .image img {
   transform: scale(1.1);
@@ -478,6 +478,48 @@ section {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.blogs .slide .content {
+  padding: 2rem;
+}
+.blogs .slide .content .link {
+  padding-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+.blogs .slide .content .link a {
+  color: #f00;
+}
+.blogs .slide .content .link a:hover {
+  color: #fff;
+}
+.blogs .slide .content .link span {
+  color: #fff;
+  padding: 0 1rem;
+}
+.blogs .slide .content h3 {
+  font-size: 2rem;
+  color: #fff;
+  line-height: 1.5;
+}
+.blogs .slide .content p {
+  font-size: 1.5rem;
+  color: #aaa;
+  line-height: 2;
+}
+
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+.footer .box-container .box h3 {
+  font-size: 2.2rem;
+  color: #fff;
+  padding: 1rem 0;
+}
+.footer .box-container .box .links {
+  background-color: red;
+  display: block;
 }
 
 @media (max-width: 991px) {
@@ -543,6 +585,6 @@ section {
 }
 @media (max-width: 450px) {
   html {
-    font-size: 55%;
+    font-size: 50%;
   }
 }/*# sourceMappingURL=styles.css.map */

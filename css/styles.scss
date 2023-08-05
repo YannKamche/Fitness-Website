@@ -280,7 +280,6 @@ section {
 
         &:hover .image img {
             transform: scale(1.1);
-            filter: blur(1.5px);
         }
 
         .image {
@@ -568,6 +567,7 @@ section {
     
     .slide {
         background: $light-bg;
+        margin-bottom: 7rem;
 
         &:hover .image img {
             transform: scale(1.1);
@@ -585,9 +585,68 @@ section {
             }
         }
 
+        .content {
+            padding: 2rem;
+
+            .link {
+                padding-bottom: 1.5rem;
+                font-size: 1.5rem;
+
+                a {
+                    color: $red;
+
+                    &:hover {
+                        color: $white;
+                    }
+                }
+                span {
+                    color: $white;
+                    padding: 0 1rem;
+
+                }
+            }
+
+            h3 {
+                font-size: 2rem;
+                color: $white;
+                line-height: 1.5;
+            }
+
+            p {
+                font-size: 1.5rem;
+                color: $light-white;
+                line-height: 2;
+            }
+
+        }
+
     }
 
 }
+
+//footer section styles
+.footer {
+
+    .box-container {
+        @include grid(25rem);
+
+        .box {
+            
+            h3 {
+                font-size: 2.2rem;
+                color: $white;
+                padding: 1rem 0;
+            }
+
+            .links {
+                background-color: red;
+                display: block;
+                color: ;
+            }
+        }
+    }
+}
+
 
 
 
@@ -671,6 +730,6 @@ section {
 }
 @media (max-width: 450px) {
     html {
-        font-size: 55%;
+        font-size: 50%;
     }
 }
