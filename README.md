@@ -1,10 +1,11 @@
 # Fitness-Website  
 ## Preview: https://fit-and-trim.netlify.app/
-![Screenshot (511)](https://github.com/YannKamche/Fitness-Website/assets/122357201/a445da28-54c3-4d31-baec-b4f03758fe62)
-![Screenshot (505)](https://github.com/YannKamche/Fitness-Website/assets/122357201/8cda65fd-b2fd-48d6-ba80-bc2d86edcdc9)
-![Screenshot (506)](https://github.com/YannKamche/Fitness-Website/assets/122357201/1545fc03-ce6d-411a-b53e-f0a2255049d6)
-![Screenshot (507)](https://github.com/YannKamche/Fitness-Website/assets/122357201/595f55df-24ff-46c6-9ca6-0f25842e2b5c)
-![Screenshot (508)](https://github.com/YannKamche/Fitness-Website/assets/122357201/871da216-5c19-4e04-8010-59d2a092da85)
-![Screenshot (509)](https://github.com/YannKamche/Fitness-Website/assets/122357201/0895e922-74cf-4ba3-a44f-464c2e2cece6)
-![Screenshot (510)](https://github.com/YannKamche/Fitness-Website/assets/122357201/713d95d6-328c-407f-9eaf-75d7dc6f178e)
+![Screenshot (505)](https://github.com/YannKamche/Fitness-Website/assets/122357201/b1a554c8-f2d5-45fa-8000-7f24ffd4a66b)
+![Screenshot (506)](https://github.com/YannKamche/Fitness-Website/assets/122357201/d779b60d-51e0-4422-9e65-db4a5e508529)
+![Screenshot (507)](https://github.com/YannKamche/Fitness-Website/assets/122357201/718eeae8-a758-4264-a2ea-30aa9158e1a8)
+![Screenshot (508)](https://github.com/YannKamche/Fitness-Website/assets/122357201/b97707bc-9b3e-4def-a05c-ae5d19da1927)
+![Screenshot (509)](https://github.com/YannKamche/Fitness-Website/assets/122357201/80e06c9d-acd3-422a-ad71-d3edb23ec237)
+![Screenshot (510)](https://github.com/YannKamche/Fitness-Website/assets/122357201/4661083f-02a0-4d25-929e-5a9665f85a77)
+![Screenshot (511)](https://github.com/YannKamche/Fitness-Website/assets/122357201/3441173e-0eb5-4187-938d-ac4506320800)
+
 
