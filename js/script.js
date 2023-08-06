@@ -18,6 +18,10 @@ var swiper = new Swiper(".home-slider", {
     grabCursor: true,
     loop:true,
     centeredSlides: true,
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+    },
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -29,7 +33,7 @@ var swiper = new Swiper(".review-slider", {
     grabCursor: true,
     loop:true,
     autoplay: {
-        delay: 7500,
+        delay: 2000,
         disableOnInteraction: false,
     },
     breakpoints:{
@@ -47,7 +51,7 @@ var swiper = new Swiper(".blogs-slider", {
     grabCursor: true,
     loop:true,
     autoplay: {
-        delay: 7500,
+        delay: 2000,
         disableOnInteraction: false,
     },
     pagination: {
