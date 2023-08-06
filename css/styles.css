@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Nunito+Sans:wght@200;300;400;600&family=Poppins:wght@400;500;600;700&family=Titan+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
 * {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Nunito", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -36,7 +36,6 @@ section {
   padding: 5rem 9%;
 }
 
-/** All sections title style **/
 .heading {
   text-align: center;
   margin-bottom: 3rem;
@@ -56,7 +55,7 @@ section {
 .heading span {
   font-size: 3rem;
   color: #f00;
-  background-color: #000;
+  background: #000;
   padding: 0.5rem 1.5rem;
   border: 0.1rem solid #aaa;
   border-radius: 0.5rem;
@@ -67,9 +66,9 @@ section {
   display: inline-block;
   padding: 1rem 2.8rem;
   padding-right: 3rem;
+  background: linear-gradient(130deg, #f00 93%, transparent 90%);
   color: #fff;
   cursor: pointer;
-  background: linear-gradient(130deg, #f00 93%, transparent 90%);
   font-size: 1.7rem;
 }
 .btn:hover {
@@ -85,16 +84,16 @@ section {
   align-items: center;
   justify-content: space-between;
   padding: 0 9%;
-  background: #000;
   z-index: 10000;
+  background: #000;
 }
 .header .logo {
   font-weight: bolder;
-  color: #f00;
+  color: #fff;
   font-size: 3rem;
 }
 .header .logo span {
-  color: #fff;
+  color: #f00;
 }
 .header .navbar a {
   display: inline-block;
@@ -115,7 +114,7 @@ section {
 
 .home {
   padding: 0;
-  margin-top: 6.5rem;
+  margin-top: 5rem;
 }
 .home .slide {
   min-height: 70vh;
@@ -273,16 +272,16 @@ section {
 }
 .pricing .information h3 {
   font-size: 4rem;
-  color: #fff;
   padding-top: 0.5rem;
+  color: #fff;
 }
 .pricing .information p {
   line-height: 2;
   padding: 1rem 0;
-  color: #aaa;
   font-size: 1.4rem;
+  color: #aaa;
 }
-.pricing .information i {
+.pricing .information p i {
   padding-right: 1rem;
   color: #f00;
 }
@@ -313,10 +312,10 @@ section {
 .pricing .plan .list p {
   line-height: 2;
   padding: 1rem 0;
-  color: #aaa;
   font-size: 1.4rem;
+  color: #aaa;
 }
-.pricing .plan .list i {
+.pricing .plan .list p i {
   padding-right: 1rem;
   color: #f00;
 }
@@ -328,7 +327,6 @@ section {
 }
 .trainers .box-container .box {
   height: 40rem;
-  background-color: red;
   overflow: hidden;
   position: relative;
 }
@@ -336,18 +334,18 @@ section {
   transform: translateY(0);
 }
 .trainers .box-container .box img {
-  width: 100%;
   height: 100%;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .trainers .box-container .box .content {
-  background: #111;
-  padding: 2rem;
   position: absolute;
+  bottom: 0;
   left: 0;
   right: 0;
-  bottom: 0;
+  background: #111;
+  padding: 2rem;
   transform: translateY(6.5rem);
 }
 .trainers .box-container .box .content span {
@@ -376,6 +374,7 @@ section {
 .banner {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/banner-bg.jpg) no-repeat;
   background-size: cover;
+  background-position: center;
   background-attachment: fixed;
   text-align: center;
 }
@@ -384,16 +383,16 @@ section {
   color: #f00;
 }
 .banner h3 {
-  color: #fff;
   padding-top: 1rem;
+  color: #fff;
   text-transform: uppercase;
   font-size: 3.5rem;
 }
 .banner p {
+  margin: 1rem auto;
+  max-width: 60rem;
   font-size: 1.5rem;
   color: #aaa;
-  max-width: 60rem;
-  margin: 1rem auto;
   line-height: 2;
 }
 
@@ -430,8 +429,8 @@ section {
 }
 .review .review-slider .slide p {
   font-size: 1.5rem;
-  color: #aaa;
   line-height: 2;
+  color: #aaa;
 }
 .review .review-slider .slide .user {
   display: flex;
@@ -439,8 +438,8 @@ section {
   margin-top: 1.5rem;
 }
 .review .review-slider .slide .user img {
-  width: 5rem;
   height: 5rem;
+  width: 5rem;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
@@ -474,8 +473,8 @@ section {
   overflow: hidden;
 }
 .blogs .slide .image img {
-  width: 100%;
   height: 100%;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -505,6 +504,7 @@ section {
   font-size: 1.5rem;
   color: #aaa;
   line-height: 2;
+  padding: 1rem 0;
 }
 
 .footer .box-container {
