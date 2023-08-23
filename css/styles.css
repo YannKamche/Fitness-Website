@@ -142,7 +142,7 @@ section {
   height: 2rem;
   width: 2rem;
   background: #fff;
-  border-radius: 0;
+  border-radius: 5px;
 }
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #f00;
@@ -173,6 +173,7 @@ section {
 .about .image::after {
   bottom: 0;
   right: 0;
+  background: #fff;
 }
 .about .image img {
   width: 100%;
