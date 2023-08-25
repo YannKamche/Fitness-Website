@@ -1,7 +1,7 @@
 # Fitness-Website  
 ## Preview: https://fit-and-trim.netlify.app/
 ## FIT & TRIM
-<br>
+</br>
 "Discover a healthier, happier you at FIT & TRIM. We're more than just a website; we're your dedicated partners on your fitness journey. Our mission is to provide you with a wealth of expert guidance, from personalized workout plans to nutrition tips that fit your lifestyle. </br>
 At FIT & TRIM, we believe in the power of sustainable fitness. No crash diets or extreme routines here. Instead, we offer science-backed strategies and a supportive community to help you make lasting changes. <br>
 
